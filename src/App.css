@@ -1,32 +1,72 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: cyber;
+  src: url(./media/fonts/cyber.ttf);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.homepage-h1-wrap {
+    position: fixed;
+    display: flex;
+    left: 0px;
+    right:  0px;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.homepage-h1-wrap div {
+  background-color: black;
+  width: 100%;
+  height: 50px;
+  margin-top: 15%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.homepage-h1-wrap h1 {
+  text-align: center;
+  font-family: cyber;
+  font-size:  40px;;
+  background-color: black;
+  height: 50px;
+  width:  200px;
+  background: -webkit-linear-gradient( red, #fc00ff, #00dbde);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.App-link {
-  color: #61dafb;
+.homepage-carousel-wrapper {
+    width: 100%;
+    height: 100%;
+    position:fixed; /* add this code for position fixed */
+    top:0px; /* set top and left 0 */
+    z-index: -10000;
 }
+.homepage-carousel-wrapper .homepage-carousel {
+    height: 100% !important;
+}
+.homepage-carousel-wrapper .homepage-carousel .carousel-slider {
+    height: 100% !important;
+}
+.homepage-carousel-wrapper .homepage-carousel .carousel-slider div {
+    height: 100% !important;
+}
+.homepage-carousel-wrapper .homepage-carousel .carousel-slider ul {
+    height: 100% !important;
+}
+.homepage-carousel-wrapper .homepage-carousel ul div {
+    height: 100%;
+}
+.homepage-carousel-wrapper .homepage-carousel ul div img {
+    height: 100%;
+    width: auto;
+    min-width: 100%;
+}
+
+.homepage-carousel .carousel .slide .legend {
+  opacity: 1;
+  width: 100%;
+  left: 0;
+  margin-left: 0;
+  border-radius: 0;
+}
+
 
 @keyframes App-logo-spin {
   from {
