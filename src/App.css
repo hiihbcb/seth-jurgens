@@ -77,24 +77,6 @@
   margin-left: 0;
   border-radius: 0;
 }
-.homepage-carousel .colour {
-    background-image: url(./media/colour.jpg);
-}
-.homepage-carousel .sunset {
-    background-image: url(./media/sunset.jpg);
-}
-.homepage-carousel .building {
-    background-image: url(./media/building.jpg);
-}
-.homepage-carousel .alley {
-    background-image: url(./media/alley.jpg);
-}
-.homepage-carousel .punk {
-    background-image: url(./media/punk.jpg);
-}
-.homepage-carousel .arcade {
-    background-image: url(./media/arcade.jpg);
-}
 
 @keyframes App-logo-spin {
   from {

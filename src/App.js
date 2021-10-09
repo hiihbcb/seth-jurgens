@@ -1,4 +1,10 @@
-import sethj from './media/sethj.jpg';
+import sethj from './media/sethj-min.jpg';
+import colour from './media/colour-min.jpg';
+import building from './media/building-min.jpg';
+import sunset from './media/sunset-min.jpg';
+import alley from './media/alley-min.jpg';
+import punk from './media/punk-min.jpg';
+import arcade from './media/arcade-min.jpg';
 
 import './App.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -18,30 +24,32 @@ function App() {
         <Carousel className="homepage-carousel"
                   showArrows={false}
                   autoPlay={true}
+                  autoFocus={false}
                   swipeable={false}
                   stopOnHover={false}
                   showIndicators={false}
                   showStatus={false}
                   showThumbs={false}
                   useKeyboardArrows={false}
-                  interval={20000}
+                  transitionTime={4000}
+                  interval={24000}
                   infiniteLoop={true}>
-            <div className="colour" alt="Random colours">
+            <div style={{ backgroundImage: `url(${colour})` }} alt="Random colours">
                 <p className="legend">Image by Andrew Haimerl</p>
             </div>
-            <div className="building" alt="Neon building">
+            <div style={{ backgroundImage: `url(${building})` }} alt="Neon building">
                 <p className="legend">Image by Levon Vardanyan</p>
             </div>
-            <div className="sunset" alt="Sunset over the city">
+            <div style={{ backgroundImage: `url(${sunset})` }} alt="Sunset over the city">
                 <p className="legend">Image by Jezael Melgoza</p>
             </div>
-            <div className="alley" alt="Neon alleyway">
+            <div style={{ backgroundImage: `url(${alley})` }} alt="Neon alleyway">
                 <p className="legend">Image by Hin Bong Yeung</p>
             </div>
-            <div className="punk" alt="Man standing on metal">
+            <div style={{ backgroundImage: `url(${punk})` }} alt="Man standing on metal">
                 <p className="legend">Image by Drew Graham</p>
             </div>
-            <div className="arcade" alt="Old arcade">
+            <div style={{ backgroundImage: `url(${arcade})` }} alt="Old arcade">
                 <p className="legend">Image by Ben Neale</p>
             </div>
         </Carousel>
