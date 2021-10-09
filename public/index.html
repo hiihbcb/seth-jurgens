@@ -25,6 +25,12 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Seth Jurgens | Homepage</title>
+    <script>
+    var host = "www.sethj.co.uk" || "sethj.co.uk";
+    if ((host == window.location.host) && (window.location.protocol != "https:")){
+    window.location.protocol = "https";
+    }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
