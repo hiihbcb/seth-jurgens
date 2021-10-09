@@ -1,6 +1,4 @@
-import colour from './media/colour.jpg';
-import sunset from './media/sunset.jpg';
-import building from './media/building.jpg';
+import sethj from './media/sethj.jpg';
 
 import './App.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -13,7 +11,10 @@ function App() {
   return (
     <div className="homepage">
       <div className="homepage-h1-wrap">
-          <div><h1>Seth Jurgens</h1></div>
+          <div>
+              <img src={sethj} alt="Seth Jurgens"/>
+              <h1>Seth Jurgens</h1>
+          </div>
       </div>
       <div className="homepage-carousel-wrapper">
         <Carousel className="homepage-carousel"
@@ -27,16 +28,13 @@ function App() {
                   useKeyboardArrows={false}
                   interval={20000}
                   infiniteLoop={true}>
-            <div>
-                <img src={colour} />
+            <div className="colour" alt="Random colours">
                 <p className="legend">Image by Andrew Haimerl</p>
             </div>
-            <div>
-                <img src={sunset} />
+            <div className="sunset" alt="Sunset over the city">
                 <p className="legend">Image by Jezael Melgoza</p>
             </div>
-            <div>
-                <img src={building} />
+            <div className="building" alt="Neon building">
                 <p className="legend">Image by Levon Vardanyan</p>
             </div>
         </Carousel>
