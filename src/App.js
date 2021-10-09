@@ -14,12 +14,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className="homepage">
-      <div className="homepage-h1-wrap">
+      <heading>
+        <div className="homepage-h1-wrap">
           <div>
               <img src={sethj} alt="Seth Jurgens"/>
               <h1>Seth Jurgens</h1>
           </div>
-      </div>
+        </div>
+      </heading>
       <div className="homepage-carousel-wrapper">
         <Carousel className="homepage-carousel"
                   showArrows={false}
