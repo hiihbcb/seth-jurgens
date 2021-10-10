@@ -1,0 +1,66 @@
+/**
+* @Author HIIHBCB
+*/
+
+.homepage-content-wrap {
+    position:absolute;
+    top: 0px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: auto;
+    flex-wrap: wrap;
+    margin-bottom:  40px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.homepage-content-wrap a {
+    text-decoration: none;
+}
+.homepage-content-wrap div{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    border-radius: 50%;
+}
+.homepage-content-wrap img {
+    width: 100%;
+    border-radius: 50%;
+}
+.homepage-content-wrap .homepage-content-jonnybot h3 {
+  text-align: center;
+  position: relative;
+  top: -70px;
+  font-family: cyberpunk;
+  font-size: 40px;
+  letter-spacing: -10px;
+  color: #C9152E;
+  height: 0;
+  margin: 0;
+}
+.homepage-content-wrap .homepage-content-jonnybot:hover{
+    box-shadow: 0px 0px 20px 20px red;
+}
+.homepage-content-wrap .homepage-content-website:hover{
+    box-shadow:
+        0px 0px 15px 10px #00dbde,
+        0px 0px 20px 20px #fc00ff;
+}
+.homepage-content-wrap .homepage-content-github:hover{
+    box-shadow: 0px 0px 20px 20px white;
+}
+
+@media only screen and (max-width: 425px) {
+    .homepage-content-wrap {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .homepage-content-wrap div:first-child {
+        margin-top: 140px;
+    }
+}
