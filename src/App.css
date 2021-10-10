@@ -2,26 +2,37 @@
   font-family: cyber;
   src: url(./media/fonts/cyber.ttf);
 }
-.homepage-h1-wrap {
-    position: fixed;
+@font-face {
+  font-family: cyberpunk;
+  src: url(./media/fonts/cyberpunk.ttf);
+}
+.homepage-content {
+    height: calc(100vh - 40px);
+}
+.homepage-header-full {
+    position: sticky;
     display: flex;
     top: 0px;
     left: 0px;
     right:  0px;
-    height: 100%;
     justify-content: center;
     align-items: flex-start;
+    z-index: 10;
 }
-.homepage-h1-wrap div {
+.homepage-header-full .homepage-header-wrap {
   background-color: black;
   width: 100%;
-  height: 50px;
+  height: 85px;
   margin-top: clamp(30px, 4%, 85px);
   display: flex;
   justify-content: left;
 }
-.homepage-h1-wrap h1 {
-  text-align: center;
+.homepage-header-full .homepage-header-wrap div{
+    display: flex;
+    flex-direction: column;
+}
+.homepage-header-full h1 {
+  text-align: left;
   font-family: cyber;
   font-size: 40px;
   background-color: black;
@@ -31,14 +42,83 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-left: 1%;
+  margin-bottom: 0;
 }
-.homepage-h1-wrap img {
+.homepage-header-full h2 {
+  text-align: left;
+  font-family: cyber;
+  font-size: 30px;
+  background-color: black;
+  height: 30px;
+  width: 200px;
+  background: -webkit-linear-gradient( red, #fc00ff, #00dbde);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 1%;
+}
+.homepage-header-full img {
     width: 8%;
-    min-width: 100px;
+    min-width: 120px;
     align-self: center;
     border-radius: 50%;
     border: solid 10px black;
     margin-left: 1%;
+}
+.homepage-content-wrap {
+    position:absolute; /* add this code for position fixed */
+    top: 0px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: auto;
+    flex-wrap: wrap;
+    margin-bottom:  40px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.homepage-content-wrap a {
+    text-decoration: none;
+}
+.homepage-content-wrap div{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    border-radius: 50%;
+}
+.homepage-content-wrap img {
+    width: 100%;
+    border-radius: 50%;
+}
+@media only screen and (max-width: 425px) {
+    .homepage-content-wrap div:first-child {
+        margin-top: 140px;
+    }
+}
+.homepage-content-wrap .homepage-content-jonnybot h3 {
+  text-align: center;
+  position: relative;
+  top: -70px;
+  font-family: cyberpunk;
+  font-size: 40px;
+  letter-spacing: -10px;
+  color: #C9152E;
+  height: 0;
+  margin: 0;
+}
+.homepage-content-wrap .homepage-content-jonnybot:hover{
+    box-shadow: 0px 0px 20px 20px red;
+}
+.homepage-content-wrap .homepage-content-website:hover{
+    box-shadow:
+        0px 0px 15px 10px #00dbde,
+        0px 0px 20px 20px #fc00ff;
+}
+.homepage-content-wrap .homepage-content-github:hover{
+    box-shadow: 0px 0px 20px 20px white;
 }
 .homepage-carousel-wrapper {
     width: 100%;
@@ -65,17 +145,16 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.homepage-carousel-wrapper .homepage-carousel ul div img {
-    height: 100%;
-    width: auto;
-    min-width: 100%;
-}
-.homepage-carousel .carousel .slide .legend {
+.homepage-carousel-wrapper .homepage-carousel .carousel .slide .legend {
   opacity: 1;
   width: 100%;
   left: 0;
   margin-left: 0;
+  margin-bottom: 0px;
   border-radius: 0;
+  z-index: 10;
+  bottom: 0;
+  height: 40px;
 }
 
 @keyframes App-logo-spin {

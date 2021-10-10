@@ -1,4 +1,9 @@
 import sethj from './media/sethj-min.jpg';
+
+import samurai from './media/samurai.jpg';
+import sj from './media/sj.png';
+import github from './media/github.png';
+
 import colour from './media/colour-min.jpg';
 import building from './media/building-min.jpg';
 import sunset from './media/sunset-min.jpg';
@@ -14,14 +19,37 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className="homepage">
-      <heading>
-        <div className="homepage-h1-wrap">
-          <div>
-              <img src={sethj} alt="Seth Jurgens"/>
-              <h1>Seth Jurgens</h1>
+      <div className="homepage-content">
+        <heading>
+          <div className="homepage-header-full">
+            <div className="homepage-header-wrap">
+                <img src={sethj} alt="Seth Jurgens"/>
+                <div className="homepage-title-wrap">
+                  <h1>Seth Jurgens</h1>
+                  <h2>hiihbcb</h2>
+                </div>
+            </div>
+          </div>
+        </heading>
+        <div className="homepage-content-wrap">
+          <div className="homepage-content-jonnybot">
+            <a href="https://github.com/hiihbcb/jonny-silverhand" target="__blank" >
+              <img src={samurai} alt="Jonny Bot Logo"/>
+              <h3>Jonny Bot</h3>
+            </a>
+          </div>
+          <div className="homepage-content-website">
+            <a href="https://github.com/hiihbcb/seth-jurgens" target="__blank" >
+              <img src={sj} alt="Seth Jurgens Website Logo"/>
+            </a>
+          </div>
+          <div className="homepage-content-github">
+            <a href="https://github.com/hiihbcb/" target="__blank" >
+              <img src={github} alt="Github Logo"/>
+            </a>
           </div>
         </div>
-      </heading>
+      </div>
       <div className="homepage-carousel-wrapper">
         <Carousel className="homepage-carousel"
                   showArrows={false}
@@ -37,6 +65,7 @@ function App() {
                   interval={24000}
                   infiniteLoop={true}>
             <div style={{ backgroundImage: `url(${colour})` }} alt="Random colours">
+                <span style={{ backgroundImage: `url(${colour})` }} alt="Random colours"/>
                 <p className="legend">Image by Andrew Haimerl</p>
             </div>
             <div style={{ backgroundImage: `url(${building})` }} alt="Neon building">
