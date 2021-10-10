@@ -93,11 +93,6 @@
     width: 100%;
     border-radius: 50%;
 }
-@media only screen and (max-width: 425px) {
-    .homepage-content-wrap div:first-child {
-        margin-top: 140px;
-    }
-}
 .homepage-content-wrap .homepage-content-jonnybot h3 {
   text-align: center;
   position: relative;
@@ -155,6 +150,17 @@
   z-index: 10;
   bottom: 0;
   height: 40px;
+}
+
+@media only screen and (max-width: 425px) {
+    .homepage-content-wrap {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .homepage-content-wrap div:first-child {
+        margin-top: 140px;
+    }
 }
 
 @keyframes App-logo-spin {
