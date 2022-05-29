@@ -29,9 +29,10 @@ function Background() {
                   showStatus={false}
                   showThumbs={false}
                   useKeyboardArrows={false}
-                  transitionTime={4000}
-                  interval={24000}
-                  infiniteLoop={true}>
+                  transitionTime={0}
+                  interval={20000}
+                  infiniteLoop={true}
+                  emulateTouch={false}>
             <div style={{ backgroundImage: `url(${colour})` }} alt="Random colours">
                 <span style={{ backgroundImage: `url(${colour})` }} alt="Random colours"/>
                 <p className="legend">Image by Andrew Haimerl</p>

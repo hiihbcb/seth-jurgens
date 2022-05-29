@@ -2,7 +2,7 @@
 * @Author HIIHBCB
 */
 
-import sethj from '../media/images/sethj-min.jpg';
+import seth from '../media/images/seth.jpg';
 
 import '../css/Global.css';
 import '../css/Header.css';
@@ -13,7 +13,7 @@ function Header() {
       <heading>
         <div className="header-full">
           <div className="header-wrap">
-              <img src={sethj} alt="Seth Jurgens"/>
+              <img src={seth} alt="Seth Jurgens"/>
               <div className="title-wrap">
                 <h1>Seth Jurgens</h1>
                 <h2>hiihbcb</h2>
