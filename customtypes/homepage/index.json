@@ -1,0 +1,97 @@
+{
+  "id": "homepage",
+  "label": "Homepage",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "name": {
+        "type": "Text",
+        "config": {
+          "label": "Name",
+          "placeholder": ""
+        }
+      },
+      "username": {
+        "type": "Text",
+        "config": {
+          "label": "Username",
+          "placeholder": ""
+        }
+      },
+      "portrait": {
+        "type": "Image",
+        "config": {
+          "label": "Portrait",
+          "constraint": {},
+          "thumbnails": []
+        }
+      }
+    },
+    "background": {
+      "seconds": {
+        "type": "Number",
+        "config": {
+          "label": "Seconds",
+          "placeholder": ""
+        }
+      },
+      "background": {
+        "type": "Group",
+        "config": {
+          "label": "Background",
+          "fields": {
+            "image": {
+              "type": "Image",
+              "config": {
+                "label": "Image",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "author": {
+              "type": "Text",
+              "config": {
+                "label": "Author",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      }
+    },
+    "Links": {
+      "links": {
+        "type": "Group",
+        "config": {
+          "label": "Links",
+          "fields": {
+            "image": {
+              "type": "Image",
+              "config": {
+                "label": "Image",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "gradient": {
+              "type": "Color",
+              "config": {
+                "label": "Gradient",
+                "placeholder": ""
+              }
+            },
+            "url": {
+              "type": "Link",
+              "config": {
+                "label": "Url",
+                "placeholder": "",
+                "select": null
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

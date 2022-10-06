@@ -1,0 +1,59 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "homepage",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "name": "speak",
+    "username": "particularly",
+    "portrait": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea"
+    },
+    "seconds": 11,
+    "background": [
+      {
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": null,
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468"
+        },
+        "author": "twenty"
+      }
+    ],
+    "links": [
+      {
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": null,
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1"
+        },
+        "gradient": "#645891",
+        "url": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        }
+      }
+    ]
+  }
+}
