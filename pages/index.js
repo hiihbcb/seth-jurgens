@@ -60,7 +60,7 @@ export default function Home({ page }) {
 
         <div className={styles.content}>
           {page.data.links.map((link, index) => (
-            <a  className={styles.link} style={{color: link.gradient}} href={link.url.url} target="_blank" rel="noopener noreferrer">
+            <a key={index} className={styles.link} style={{color: link.gradient}} href={link.url.url} target="_blank" rel="noopener noreferrer">
               <Image
                 src={link.image.url}
                 alt={link.image.alt}
