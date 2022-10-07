@@ -34,9 +34,10 @@ export default function Home({ page }) {
   return (
     <div>
       <Head>
-        <title>Seth Jurgens | Homepage</title>
-        <meta name="description" content="The Seth Jurgens website dedicated to displaying the different projects worked on by Seth" />
+        <title>{page.data.seo_title}</title>
+        <meta name="description" content={page.data.seo_description} />
         <link rel="icon" href="/sj.ico" />
+        <meta name="image" content={page.data.portrait.url} />
       </Head>
 
       <main className={styles.main} >

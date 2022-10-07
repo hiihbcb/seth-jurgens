@@ -26,6 +26,20 @@
           "constraint": {},
           "thumbnails": []
         }
+      },
+      "seo_title": {
+        "type": "Text",
+        "config": {
+          "label": "Seo Title",
+          "placeholder": ""
+        }
+      },
+      "seo_description": {
+        "type": "Text",
+        "config": {
+          "label": "Seo Description",
+          "placeholder": ""
+        }
       }
     },
     "background": {
